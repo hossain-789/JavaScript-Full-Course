@@ -57,29 +57,50 @@
 // console.log("He Full Name:", studentsInfo.fullName());
 
 //create a movie objec, okay! let's start
-const movies = {
-  title: "KGF",
-  directorFirstName: "Pranshanth",
-  directorlastName: "Pal",
-  actressName: ["Yeash, Srinidhi Shetty, Archana Jois"],
-  isHollywood: true,
-  movieType: "Action/Thriller",
-  relice: 2018,
+// const movies = {
+//   title: "KGF",
+//   directorFirstName: "Pranshanth",
+//   directorlastName: "Pal",
+//   actressName: ["Yeash, Srinidhi Shetty, Archana Jois"],
+//   isHollywood: true,
+//   movieType: "Action/Thriller",
+//   relice: 2018,
 
-  // methods inside object
-  directorFullname: function () {
-    return this.directorlastName + " " + this.directorlastName;
+//   // methods inside object
+//   directorFullname: function () {
+//     return this.directorlastName + " " + this.directorlastName;
+//   },
+// };
+
+// // accessing obect proparties
+// console.log("Movie Title:", movies.title);
+// console.log("D-First Name:", movies.directorFirstName);
+// console.log("D-Last Name:", movies["directorlastName"]);
+// console.log("Actress Name:", movies.actressName.join(", "));
+// console.log("This is Hollywood movie:", movies.isHollywood);
+// console.log("MovieType:", movies.movieType);
+// console.log("Relice:", movies.relice);
+
+// //using the methods
+// console.log("Director Full Name:", movies.directorFullname());
+
+
+const cousin = {
+  firstName: "Ikram",
+  lastName:"Shawdaghar",
+  age: 10,
+  isStudent: false,
+  hobbies: ["Allows fun, Mobile Game, Crying"],
+
+  fullName: function() {
+    return this.firstName +" "+ this.lastName;
   },
+  
 };
 
-// accessing obect proparties
-console.log("Movie Title:", movies.title);
-console.log("D-First Name:", movies.directorFirstName);
-console.log("D-Last Name:", movies["directorlastName"]);
-console.log("Actress Name:", movies.actressName.join(", "));
-console.log("This is Hollywood movie:", movies.isHollywood);
-console.log("MovieType:", movies.movieType);
-console.log("Relice:", movies.relice);
-
-//using the methods
-console.log("Director Full Name:", movies.directorFullname());
+console.log("Fist Name:", cousin.firstName);
+console.log("Last Name:", cousin.lastName);
+console.log("age:", cousin.age);
+console.log("Is Student:", cousin.isStudent);
+console.log("Hobbies:", cousin.hobbies.join(", "));
+console.log("Student Name Is:", cousin.fullName());
